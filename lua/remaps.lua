@@ -10,6 +10,7 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live gr
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
+-- Harpoon remaps
 local harpoon = require("harpoon")
 harpoon:setup()
 vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end)
@@ -26,3 +27,5 @@ vim.keymap.set("n", "<C-S-N>", function() harpoon:list():next() end)
 
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
+-- lsp remap
+vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename)
