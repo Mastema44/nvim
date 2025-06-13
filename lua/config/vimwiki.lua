@@ -9,3 +9,10 @@ vim.api.nvim_create_autocmd("BufNewFile", {
     pattern = { "*/vimwiki/diary/**" },
     callback = JournalCreate,
 })
+
+-- automatic diary index
+vim.api.nvim_create_autocmd("BufReadPost", {
+    pattern = { "*/vimwiki/diary/diary.md" },
+    command = "VimwikiDiaryGenerateLinks"
+})
+
