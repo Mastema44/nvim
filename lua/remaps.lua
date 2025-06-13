@@ -29,3 +29,5 @@ vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 
 -- lsp remap
 vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename)
+vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float)
+

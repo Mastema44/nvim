@@ -8,16 +8,16 @@ return {
   -- The configuration for the plugin
   init = function()
     vim.g.vimwiki_list = {
-       {
+      {
         -- Here will be the path for your wiki
-        path = "/mnt/c/Users/maste/Dropbox/vimwiki/",
+        path = "~/vimwiki/",
         -- The syntax for the wiki
         syntax = "markdown",
         ext = "md",
       },
-      {
+       {
         -- Here will be the path for your wiki
-        path = "~/vimwiki/",
+        path = "~/Dropbox/vimwiki/",
         -- The syntax for the wiki
         syntax = "markdown",
         ext = "md",
