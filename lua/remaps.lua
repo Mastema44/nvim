@@ -19,7 +19,7 @@ vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:lis
 vim.keymap.set("n", "<C-j>", function() harpoon:list():select(1) end)
 vim.keymap.set("n", "<C-k>", function() harpoon:list():select(2) end)
 vim.keymap.set("n", "<C-l>", function() harpoon:list():select(3) end)
-vim.keymap.set("n", "<C-;>", function() harpoon:list():select(4) end)
+vim.keymap.set("n", "<C-h>", function() harpoon:list():select(4) end)
 
 -- Toggle previous & next buffers stored within Harpoon list
 vim.keymap.set("n", "<C-S-P>", function() harpoon:list():prev() end)
@@ -31,3 +31,7 @@ vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename)
 vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float)
 
+-- supermaven
+vim.keymap.set("n", "<leader>ss", vim.cmd.SupermavenStart)
+vim.keymap.set("n", "<leader>SS", vim.cmd.SupermavenStop)
+vim.keymap.set("n", "<leader>sr", vim.cmd.SupermavenRestart)

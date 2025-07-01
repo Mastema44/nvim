@@ -55,6 +55,7 @@ require("lazy").setup({
 })
 require("remaps")
 require("config.vimwiki")
+require("config.supermaven")
 
 
 -- Transparent background
