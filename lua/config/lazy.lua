@@ -49,12 +49,16 @@ require("lazy").setup({
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
-  install = { colorscheme = { "habamax" } },
+  install = { colorscheme = { "tokyonight", "habamax" } },
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
+-- Set colorscheme
+vim.cmd("colorscheme onedark")
+
 require("remaps")
 require("config.vimwiki")
+require("config.treesitter")
 
 
 -- Transparent background
