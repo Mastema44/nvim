@@ -31,7 +31,13 @@ vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename)
 vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float)
 
--- supermaven
-vim.keymap.set("n", "<leader>ss", vim.cmd.SupermavenStart)
-vim.keymap.set("n", "<leader>SS", vim.cmd.SupermavenStop)
-vim.keymap.set("n", "<leader>sr", vim.cmd.SupermavenRestart)
+-- copilot chat remaps
+vim.keymap.set("i", "<C-j>", 'copilot#Accept("<CR>")', {
+    noremap = true,
+    expr = true,
+    silent = true,
+    replace_keycodes = false,
+    desc = "Accept Copilot suggestion"
+})
+vim.g.copilot_no_tab_map = true
+
