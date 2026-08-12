@@ -1,4 +1,5 @@
-require("nvim-treesitter.configs").setup {
+require("nvim-treesitter").setup {
+    install_dir = vim.fn.stdpath("data") .. "/site",
     ensure_installed = { "c", "lua", "python", "javascript", "html", "css", "json", "bash", "markdown" },
     sync_install = false,
     auto_install = true,
